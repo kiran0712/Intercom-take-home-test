@@ -22,7 +22,7 @@ E) Save the output in a file ‘output.txt’ and print the output
 
 Requirements to successfully run the code:
 
-1. Python 3 environment: can be downloaded using anaconda environment. The documentation to help with this can be found here: https://docs.anaconda.com/anaconda/install/
+1. Python environment: can be downloaded using anaconda environment. The documentation to help with this can be found here: https://docs.anaconda.com/anaconda/install/. This code has been developed in Python 2.7
 
 2. Suitable IDE to run the code: This code has been developed on Pycharm IDE. This can be found here: https://www.jetbrains.com/pycharm/
 
