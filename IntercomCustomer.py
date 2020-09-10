@@ -58,7 +58,7 @@ class IntercomCustomer:
         cust_list = '[' + customer_list[:len(customer_list)] + ']'
 
         final_cust = self.customer_filter(json.loads(cust_list))
-        output_file = '/Volumes/BooksandEverything/intercom/output.txt'
+        output_file = '/Volumes/BooksandEverything/intercom/output.txt' #The file path has to be changed based on your file structure
 
         """Code to ensure that each time the program is run, the output file gets cleared, this is done to reduce 
         redundancy in the file"""
@@ -74,7 +74,7 @@ class IntercomCustomer:
 
 if __name__ == '__main__':
     customerobj = IntercomCustomer()
-    customer_file = '/Volumes/BooksandEverything/intercom/customers.txt'
+    customer_file = '/Volumes/BooksandEverything/intercom/customers.txt'. #The file path has to be changed based on your file structure
     with open(customer_file, 'w') as customers:
         customers.write(urlopen("https://s3.amazonaws.com/intercom-take-home-test/customers.txt").read().decode('utf-8'))
     customerobj.customer_invite(customer_file)
